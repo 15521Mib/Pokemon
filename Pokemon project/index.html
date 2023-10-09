@@ -4,9 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <title>Informações dos Pokémon</title>
 </head>
 <body>
+    <header>
+    <li class="nav-item">
+        <a class="nav-link" href="#Login">Login</a>
+      </li>
+    </header>
 <header>
 <h1>Informaçãos dos Pokémon</h1>
 </header>
@@ -31,8 +37,74 @@
 
 
 </div>
-<div id="img">
-    
+</nav>
+<div class="container">
+    <h2 class="mb-3" id="Login">Cadastro </h2>
+    <form id="cadastroForm">
+        <div class="row">
+            <div class="form-group col">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div >
+            <div class="form-group col">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="celular">Numero de telefone:</label>
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">+99</span>
+                <input type="tel" class="form-control" id="celular" name="celular" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="complemento">Complemento:</label>
+            <input type="text" class="form-control" id="complemento" name="complemento" placeholder="se você não tiver complemento não coloque nada">
+        </div>
+        <div class="row">
+            <div class="form-group col-sm-2">
+                <label for="uf">UF:</label>
+                <select class="form-control" id="uf">
+                    <option>SP</option>
+                    <option>RJ</option>
+                    <option>RO</option>
+                    <option>AC</option>
+                    <option>AM</option>
+                    <option>RR</option>
+                    <option>PA</option>
+                    <option>AP</option>
+                    <option>TO</option>
+                    <option>MA</option>
+                    <option>PI</option>
+                    <option>CE</option>
+                    <option>RN</option>
+                    <option>PB</option>
+                    <option>PE</option>
+                    <option>AL</option>
+                    <option>SE</option>
+                    <option>BA</option>
+                    <option>MG</option>
+                    <option>ES</option>
+                    <option>PR</option>
+                    <option>SC</option>
+                    <option>RS</option>
+                    <option>MS</option>
+                    <option>MT</option>
+                    <option>GO</option>
+                    <option>DF</option>
+                </select>
+            </div>
+            <div class="form-group col">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control form-control-sm" id="cep" name="cep">
+            </div>
+        </div>
+        <button type="submit" class="btn">Cadastrar</button>
+    </form>
+</div>
+</body>
+<body>
 </div>
 </section>
 </main>
