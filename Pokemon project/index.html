@@ -1,113 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="styles.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<title>Informações dos Pokémon</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="codigo/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>FAN Pokemon WIKI site</title>
 </head>
 <body>
-    <header>
-    <li class="nav-item">
-        <a class="nav-link" href="#Login">Login</a>
-      </li>
-    </header>
-<header>
-<h1>Informaçãos dos Pokémon</h1>
-</header>
-<main>
-<section class="pokemon-list">
-<ul>
-<li id="bulbasaur">Bulbasaur</li>
-<li id="ivysaur">Ivysaur</li>
-<li id="venusaur">Venusaur</li>
-<li id="charmander">Charmander</li>
-<li id="charmeleon">Charmeleon</li>
-<li id="charizard">Charizard</li>
-<li id="squirtle">Squirtle</li>
-<li id="wartortle">Wartortle</li>
-<li id="blastoise">Blastoise</li>
-</ul>
-</section>
-<section class="pokemon-info">
-<h2>Informações do Pokémon</h2>
-<div id="pokemon-details">
-                Selecione um Pokémon para ver informações.
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid border-0 rounded-0" src="img/pokemon.png" alt="" class="">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active fs-5 me-3" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 me-3" href="codigo/galeria.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fs-5 me-3" href="codigo/conta.html">ACCOUNT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-
-</div>
-</nav>
-<div class="container">
-    <h2 class="mb-3" id="Login">Cadastro </h2>
-    <form id="cadastroForm">
-        <div class="row">
-            <div class="form-group col">
-                <label for="nome">Nome:</label>
-                <input type="text" class="form-control" id="nome" name="nome" required>
-            </div >
-            <div class="form-group col">
-                <label for="email">Email:</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="example@gmail.com" required>
+      
+        <div class="card text-bg-dark border-0 rounded-0">
+            <img src="img/AshFamily.png" class="card-img" alt=".">
+            <div class="card-img-overlay img-fluid d-inline-flex flex-column justify-content-center">
+                <p class="card-title fw-bold ms-4">GOT TO CATCH THEM ALL!</p>  
+                <p class="card-text fw-light ms-4 w-50 mb-2">Welcome to the Pokémon universe
+                  If you're an old-school fan or you've just
+                  discovered this fantastic universe,
+                  this site is perfect for you.
+                  you are about to start this journey.
+                </p>  
+                <button id="botaoCadastrar" type="button" class="btn btn-primary ms-4 w-25 btn-sm" onclick="location.href ='codigo/cadastro.html'">
+                  LOG IN
+                </button>
             </div>
         </div>
-        <div class="form-group">
-            <label for="celular">Numero de telefone:</label>
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">+99</span>
-                <input type="tel" class="form-control" id="celular" name="celular" required>
+    <!-- teste -->
+    <div class="mt-5 mb-5">
+        <h1 class="fs-1 fw-bold ms-5 text-decoration-underline"> POKEDEX </h1>
+        <div class="card-group me-5 ms-5">
+            <div class="card border-0">
+               <a href="https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pokémon)"> 
+                <img src="img/Pokemon1.jpg" class="img-fluid" alt="">  
+               </a>
             </div>
-        </div>
-        <div class="form-group">
-            <label for="complemento">Complemento:</label>
-            <input type="text" class="form-control" id="complemento" name="complemento" placeholder="se você não tiver complemento não coloque nada">
-        </div>
-        <div class="row">
-            <div class="form-group col-sm-2">
-                <label for="uf">UF:</label>
-                <select class="form-control" id="uf">
-                    <option>SP</option>
-                    <option>RJ</option>
-                    <option>RO</option>
-                    <option>AC</option>
-                    <option>AM</option>
-                    <option>RR</option>
-                    <option>PA</option>
-                    <option>AP</option>
-                    <option>TO</option>
-                    <option>MA</option>
-                    <option>PI</option>
-                    <option>CE</option>
-                    <option>RN</option>
-                    <option>PB</option>
-                    <option>PE</option>
-                    <option>AL</option>
-                    <option>SE</option>
-                    <option>BA</option>
-                    <option>MG</option>
-                    <option>ES</option>
-                    <option>PR</option>
-                    <option>SC</option>
-                    <option>RS</option>
-                    <option>MS</option>
-                    <option>MT</option>
-                    <option>GO</option>
-                    <option>DF</option>
-                </select>
+            <div class="card border-0 me-5">
+                <a href="https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pokémon)"> 
+                 <img src="img/Pokemon2.jpg" class="img-fluid" alt="">  
+                </a>
             </div>
-            <div class="form-group col">
-                <label for="cep">CEP:</label>
-                <input type="text" class="form-control form-control-sm" id="cep" name="cep">
+            <div class="card border-0 me-5">
+                <a href="https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pokémon)"> 
+                 <img src="img/Pokemon3.jpg" class="img-fluid" alt="">  
+                </a>
             </div>
-        </div>
-        <button type="submit" class="btn">Cadastrar</button>
-    </form>
-</div>
-</body>
-<body>
-</div>
-</section>
-</main>
-<script src="script.js"></script>
+            <div class="card border-0 me-5">
+                <a href="https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pokémon)"> 
+                 <img src="img/Pokemon4.jpg" class="img-fluid" alt="">  
+                </a>
+              </div>
+          </div>
+          <a href="codigo/galeria.html" class="fs-5 fw-medium mt-3 me-5 d-flex flex-row-reverse"> MORE TO SEE </a>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
